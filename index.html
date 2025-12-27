@@ -574,75 +574,133 @@
 
 
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Projects</h2>
-			  <div class="row">
-			<div class="underline"></div>
-		</div>	
-            
+    <style>
+  /* ===== Project Card Style ===== */
+  .project-wrap {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-wrap:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 189, 57, 0.25);
+  }
+
+  .project-wrap .block-20 {
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .project-wrap .text {
+    padding: 15px 10px 5px;
+  }
+
+  .project-wrap h3 a {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .project-wrap p {
+    color: #bbb;
+    font-size: 14px;
+  }
+</style>
+
+<!-- ===== Projects Section ===== -->
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Projects</h2>
+        <div class="underline"></div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="project-wrap w-100">
+          <a href="https://github.com/Kulkarni26/Health-Care-Analysis-Report"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/HC Bck image.png');">
+          </a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="https://github.com/Kulkarni26/Health-Care-Analysis-Report">
+                Health Care Analysis Using Power BI & Excel
+              </a>
+            </h3>
+            <p>Analyzed healthcare data using advanced Excel and Power BI to identify gaps and improve business growth.</p>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Kulkarni26/Health-Care-Analysis-Report" class="block-20 zoom-effect" style="background-image: url('images/HC\ Bck\ image.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+      </div>
 
-                <h3 class="heading"><a href="https://github.com/Kulkarni26/Health-Care-Analysis-Report">Health Care Analysis Data Insights Using PowerBi and Excel</a></h3>
-                <p>Analyzed health care data using advanced excel concepts to identify gaps and increase the business growth.</p>
-              </div>
-            </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="project-wrap w-100">
+          <a href="https://github.com/Kulkarni26/Finance-Dashboard"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/business-dashboard-finance-management-on-600nw-2139751897.png');">
+          </a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="https://github.com/Kulkarni26/Finance-Dashboard">
+                Finance Data Analysis
+              </a>
+            </h3>
+            <p>Performed EDA on finance sales data using Excel and Power BI to drive financial growth.</p>
           </div>
-
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/Kulkarni26/Finance-Dashboard" class="block-20 zoom-effect" style="background-image: url('images/business-dashboard-finance-management-on-600nw-2139751897.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/Kulkarni26/Finance-Dashboard">Finance Data Analysis</a></h3>
-                <p>Performed exploratory data analysis on finance sales data using advanced concepts of excel and PowerBI to improve the financial growth.</p>
-              </div>
-            </div>
-          </div>
-          
-		  <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
-              </div>
-            </div>
-			</div>
-		</div>
-		<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Kulkarni26/Insurance-Analytics.git" class="block-20 zoom-effect" style="background-image: url('images/Ins_Analytics.jpg');background-size: cover;background-position: center;width: 300px;height: 300px;display: block;">
-				</a>
-				<div class="text mt-3 float-right d-block"> 
-				  <h3 class="heading"><a href="https://github.com/Kulkarni26/Insurance-Analytics.git">Insurance Analytics Report</a></h3>
-				  <p>This report provides a comprehensive analysis of insurance portfolio performance, identifying key trends, risk exposures, customer segmentation, and underwriting profitability. Insights were derived using historical claims data, policyholder demographics, premium patterns, and external market factors.</p>
-				</div>
-			  </div>
-			</div>
-
-		</div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		
-	  </div>
-    </section>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="project-wrap w-100">
+          <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/proj_3.jpg');">
+          </a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">
+                Power BI Sales Dashboard
+              </a>
+            </h3>
+            <p>Designed a Power BI dashboard to analyze online sales data across India for Madhav Store.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-4 d-flex ftco-animate mb-4">
+        <div class="project-wrap w-100">
+          <a href="https://github.com/Kulkarni26/Insurance-Analytics.git"
+             class="block-20 zoom-effect"
+             style="background-image: url('images/Ins_Analytics.jpg');">
+          </a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="https://github.com/Kulkarni26/Insurance-Analytics.git">
+                Insurance Analytics Report
+              </a>
+            </h3>
+            <p>Analyzed insurance portfolio performance to uncover trends, risks, and profitability using historical data.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
