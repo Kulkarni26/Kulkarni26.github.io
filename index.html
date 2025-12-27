@@ -147,34 +147,18 @@
 	      </div>
 	    </div>
 	  </nav>
-	 <section id="home-section" class="hero">
+	<section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
         <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+                <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" style="min-height: 550px;" data-scrollax-parent="true">
                     
-                    <div class="col-md-6 d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+                    <div class="col-md-6 d-flex align-items-center ftco-animate">
                         <div class="text">
                             <span class="subheading">Hello!</span>
                             <h1 class="mb-4 mt-3">I'm <span>Abhishek Kulkarni</span></h1>
                             <span id="typing-animation"></span>
-                            <script>
-                                const typingAnimationElement = document.getElementById('typing-animation');
-                                const typingTexts = ['Certified Data Professional'];
-                                function playTypingAnimation(text) {
-                                    for (let i = 0; i < text.length; i++) {
-                                        setTimeout(() => {
-                                            typingAnimationElement.textContent += text[i];
-                                        }, i * 200);
-                                    }
-                                    setTimeout(() => {
-                                        typingAnimationElement.textContent = '';
-                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                                    }, text.length * 200);
-                                }
-                                playTypingAnimation(typingTexts[0]);
-                            </script>
                             <br>
                             <h2>A Business &amp; Data Analyst</h2>
                             <p>
@@ -189,13 +173,12 @@
                              alt="Group Photo" 
                              style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </section>
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin-top: -50px;">
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
