@@ -159,46 +159,47 @@
     <span class="subheading">Hello!</span>
     <h1 class="mb-4 mt-3">I'm <span>Abhishek Kulkarni</span></h1>
 
-    <div style="min-height: 40px;">
-        <span id="typing-animation-1" style="font-size: 30px; font-weight: bold; color: white;"></span>
-    </div>
-    <div style="min-height: 40px;">
-        <span id="typing-animation-2" style="font-size: 30px; font-weight: bold; color: white;"></span>
-    </div>
+    <div style="min-height: 35px;">
+    <span id="typing-animation-1" style="font-weight: bold; color: white; font-size: 28px;"></span>
+</div>
+<div style="min-height: 35px;">
+    <span id="typing-animation-2" style="font-weight: bold; color: white; font-size: 28px;"></span>
+</div>
 
-    <script>
-        const line1Element = document.getElementById('typing-animation-1');
-        const line2Element = document.getElementById('typing-animation-2');
-        const line1Text = "Certified";
-        const line2Text = "Data Professional";
+<script>
+    const el1 = document.getElementById('typing-animation-1');
+    const el2 = document.getElementById('typing-animation-2');
+    const txt1 = "Certified";
+    const txt2 = "Data Professional";
 
-        function typeLine(element, text, delay, callback) {
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    element.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(type, 150);
-                } else if (callback) {
-                    setTimeout(callback, 500);
-                }
+    function typeLine(element, text, callback) {
+        let i = 0;
+        element.textContent = '';
+        function play() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(play, 150);
+            } else if (callback) {
+                setTimeout(callback, 500);
             }
-            type();
         }
+        play();
+    }
 
-        function startAnimation() {
-            line1Element.textContent = '';
-            line2Element.textContent = '';
-            // Type first line, then start second line, then restart after a delay
-            typeLine(line1Element, line1Text, 150, () => {
-                typeLine(line2Element, line2Text, 150, () => {
-                    setTimeout(startAnimation, 2000); // Wait 2 seconds before restarting
-                });
+    function startTyping() {
+        typeLine(el1, txt1, () => {
+            typeLine(el2, txt2, () => {
+                setTimeout(() => {
+                    el1.textContent = '';
+                    el2.textContent = '';
+                    startTyping();
+                }, 2500);
             });
-        }
-
-        startAnimation();
-    </script>
+        });
+    }
+    startTyping();
+</script>
 
     <br>
     <h2>A Business &amp; Data Analyst</h2>
@@ -209,11 +210,11 @@
 </div>                    
 </div>
 
-   <div class="col-md-6 d-flex align-items-center justify-content-center ftco-animate">
+  <div class="col-md-6 d-flex align-items-center justify-content-center ftco-animate">
     <img src="images/WhatsApp Image 2025-12-27 at 3.02.14 PM.jpeg" 
-         alt="Group Photo" 
-         class="img-fluid hero-img-responsive" 
-         style="height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+         alt="Abhishek Kulkarni Group" 
+         class="img-fluid responsive-hero-img" 
+         style="height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
 </div>
 
                 </div>
