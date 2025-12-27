@@ -158,38 +158,30 @@
                         <div class="text">
                             <span class="subheading">Hello!</span>
                             <h1 class="mb-4 mt-3">I'm <span>Abhishek Kulkarni</span></h1>
-							<script>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                            <span id="typing-animation"></span>
 
-						// Create an array of typing text
-						const typingTexts = ['Certified Data Professional'];
-						
+                            <script>
+                                const typingAnimationElement = document.getElementById('typing-animation');
+                                const typingTexts = ['Certified Data Professional'];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                                function playTypingAnimation(text) {
+                                    for (let i = 0; i < text.length; i++) {
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent += text[i];
+                                        }, i * 200);
+                                    }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent = '';
+                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                    }, text.length * 200);
+                                }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                                playTypingAnimation(typingTexts[0]);
+                            </script>
 
-						</script>
-
-						<br>
-
+                            <br>
                             <h2>A Business &amp; Data Analyst</h2>
                             <p>
                                 <a href="https://www.linkedin.com/in/abhishek-kulkarni-114234193/" class="btn btn-primary py-3 px-4">Linkedin</a> 
@@ -208,7 +200,7 @@
         </div>
     </div>
 </section>
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin-top: -50px;">
+	  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section" style="margin-top: -50px;">
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
