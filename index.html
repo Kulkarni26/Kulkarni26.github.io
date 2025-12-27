@@ -317,16 +317,62 @@
 			
 	<!-- ===== Experience Section Styles ===== -->
 <style>
+  /* ===== Experience Card Style ===== */
+  .experience-wrap {
+    background: #111;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .experience-wrap:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 189, 57, 0.25);
+  }
+
+  .experience-wrap .date {
+    color: #ffbd39;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .experience-wrap h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .experience-wrap .position {
+    color: #aaa;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .experience-wrap p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
   .experience-wrap ul {
     padding-left: 18px;
     margin-top: 10px;
   }
 
   .experience-wrap ul li {
+    color: #bbb;
+    font-size: 14px;
     margin-bottom: 8px;
     line-height: 1.6;
   }
 </style>
+
 
 <!-- ===== Experience Section ===== -->
 <section class="ftco-section ftco-no-pb" id="experience-section">
@@ -390,7 +436,63 @@
 				</div>
 		        </div>
 
-		<!-- ===== Education Section ===== -->
+<!-- ===== Styles for Education & Courses Boxes ===== -->
+<style>
+  .education-wrap,
+  .courses-wrap {
+    background: #111;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .education-wrap:hover,
+  .courses-wrap:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 189, 57, 0.25);
+  }
+
+  .education-wrap .date {
+    color: #ffbd39;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .education-wrap h4,
+  .courses-wrap h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .education-wrap h5 {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .education-wrap .position,
+  .courses-wrap .position {
+    color: #aaa;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .education-wrap p,
+  .courses-wrap p {
+    color: #bbb;
+    font-size: 14px;
+    margin: 0;
+  }
+</style>
+
+<!-- ===== Education Section ===== -->
 <section class="ftco-section ftco-no-pb" id="education-section">
   <div class="container">
     <div class="row justify-content-center pb-5">
@@ -402,33 +504,28 @@
     </div>
 
     <div class="row">
-
-      <!-- Education 1 -->
-      <div class="col-md-6">
-        <div class="education-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="education-wrap ftco-animate w-100">
           <span class="date">2024 - 2025</span>
           <h4>Master of Business Administration</h4>
           <h5>Data Science &amp; Business Analytics</h5>
           <span class="position">SRM University, Chennai</span>
-          <p class="mt-3">Status: Completed</p>
+          <p>Status: Completed</p>
         </div>
       </div>
 
-      <!-- Education 2 -->
-      <div class="col-md-6">
-        <div class="education-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="education-wrap ftco-animate w-100">
           <span class="date">2019 - 2023</span>
           <h4>Bachelor of Engineering</h4>
           <h5>Electronics &amp; Telecommunications</h5>
           <span class="position">I2IT, Pune</span>
-          <p class="mt-3">Grade: First Class Distinction</p>
+          <p>Grade: First Class Distinction</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
 
 <!-- ===== Courses & Certifications Section ===== -->
 <section class="ftco-section ftco-no-pb" id="courses-section">
@@ -442,52 +539,46 @@
     </div>
 
     <div class="row">
-
-      <!-- Course 1 -->
-      <div class="col-md-6">
-        <div class="courses-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="courses-wrap ftco-animate w-100">
           <h4>Business Analyst Certification</h4>
           <span class="position">ExcelR</span>
-          <p class="mt-3">Completed</p>
+          <p>Completed</p>
         </div>
       </div>
 
-      <!-- Course 2 -->
-      <div class="col-md-6">
-        <div class="courses-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="courses-wrap ftco-animate w-100">
           <h4>Google Analytics Certification</h4>
           <span class="position">Skillshop</span>
-          <p class="mt-3">Completed</p>
+          <p>Completed</p>
         </div>
       </div>
 
-      <!-- Course 3 -->
-      <div class="col-md-6">
-        <div class="courses-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="courses-wrap ftco-animate w-100">
           <h4>Power BI Using AI</h4>
           <span class="position">OfficeMasters</span>
-          <p class="mt-3">Completed</p>
+          <p>Completed</p>
         </div>
       </div>
 
-      <!-- Course 4 -->
-      <div class="col-md-6">
-        <div class="courses-wrap ftco-animate">
+      <div class="col-md-6 d-flex">
+        <div class="courses-wrap ftco-animate w-100">
           <h4>Excel Using AI</h4>
           <span class="position">OfficeMasters</span>
-          <p class="mt-3">Completed</p>
+          <p>Completed</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
 
     <section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
 			  <div class="row">
 			<div class="underline"></div>
